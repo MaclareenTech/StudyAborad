@@ -1267,6 +1267,10 @@ input[type=color] {
   text-align: center;
 }
 
+#loading-center-absolute img {
+  width: 100%;
+}
+
 #corners {
   fill: none;
   stroke-width: 7;
@@ -1575,7 +1579,7 @@ input[type=color] {
 
 /* logo */
 .logo img {
-  width: 150px;
+  width: 200px;
 }
 
 /* main menu css */
