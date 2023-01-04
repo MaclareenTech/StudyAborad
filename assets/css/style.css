@@ -21,6 +21,9 @@
 /*  01. THEME DEFAULT CSS START
 /*----------------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 :root {
   /**
   @font family declaration
@@ -1408,9 +1411,6 @@ input[type=color] {
 .header__search-3 button svg path {
   stroke: var(--tp-theme-3);
 }
-.header__login {
-  /* header login 2 */
-}
 .header__login a {
   color: var(--tp-common-black);
 }
@@ -1488,16 +1488,18 @@ input[type=color] {
 }
 .header__sticky.header__sticky {
   position: fixed !important;
-  left: 0;
-  margin: auto;
-  top: 0;
-  width: 100%;
-  box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.07);
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin: 0 auto;
+  top: 10px;
+  width: 90%;
   z-index: 99;
-  -webkit-animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
-  animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
-  -webkit-box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
-  background: var(--tp-common-white);
+  background: rgba(255, 255, 255, 0.72);
+    box-shadow: 0 8px 32px 0 rgba(120, 123, 167, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
 }
 .header__call-content h4 {
   font-size: 14px;
@@ -1940,7 +1942,7 @@ input[type=color] {
   }
 }
 .slider__height-2 {
-  min-height: 900px;
+  min-height: 850px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .slider__height-2 {
@@ -2027,14 +2029,16 @@ input[type=color] {
   }
 }
 .slider__content-2 span {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
+  font-family: 'Lobster', cursive;
   color: var(--tp-theme-2);
   display: inline-block;
   margin-bottom: 7px;
 }
 .slider__content-2 p {
   font-size: 18px;
+  font-family: 'Poppins', sans-serif;
   line-height: 28px;
   color: var(--tp-text-11);
   padding-right: 50px;
@@ -2099,8 +2103,9 @@ input[type=color] {
   }
 }
 .slider__title-2 {
-  font-size: 60px;
-  font-weight: 700;
+  font-size: 50px;
+  font-weight: 400;
+  font-family: 'Raleway', sans-serif;
   color: var(--tp-common-black-3);
   letter-spacing: -0.03em;
   margin-bottom: 13px;
@@ -2202,6 +2207,11 @@ input[type=color] {
     top: 0;
   }
 }
+
+.slider__shape-1, .slider__shape-2, .slider__shape-3 {
+  width: 20%;
+}
+
 .slider__shape-1 {
   position: absolute;
   bottom: 18%;
@@ -2228,7 +2238,9 @@ input[type=color] {
 .slider__shape-2 {
   position: absolute;
   top: 0;
-  left: -10%;
+  left: 0%;
+  -webkit-animation: hero-shadow 3s ease-in-out infinite alternate;
+    animation: hero-shadow 3s ease-in-out infinite alternate;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .slider__shape-2 {
@@ -2251,11 +2263,14 @@ input[type=color] {
 .slider__shape-3 {
   position: absolute;
   top: 10%;
-  right: -19%;
+  right: -9%;
+  -webkit-animation: hero-shadow 3s ease-in-out infinite alternate;
+    animation: hero-shadow 3s ease-in-out infinite alternate;
+    z-index: 10;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .slider__shape-3 {
-    top: 34%;
+    top: 74%;
     right: -35px;
   }
 }
