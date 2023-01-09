@@ -3136,12 +3136,9 @@ input[type=color] {
   color: var(--tp-common-white);
 }
 .course__tag-2 a {
-  display: inline-block;
   height: 26px;
   line-height: 26px;
-  padding: 0 14px;
-  font-size: 13px;
-  font-weight: 500;
+  font-size: 20px;
   color: var(--tp-common-blue-3);
   background-color: rgba(60, 102, 237, 0.08);
   -webkit-border-radius: 4px;
@@ -3284,9 +3281,8 @@ input[type=color] {
   color: var(--tp-theme-1);
 }
 .course__title-2 {
-  font-size: 20px;
+  font-size: 16px;
   margin-bottom: 17px;
-  font-weight: 600;
   line-height: 28px;
 }
 .course__title-2 a:hover {
