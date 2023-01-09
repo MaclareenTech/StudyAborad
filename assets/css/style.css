@@ -2103,9 +2103,10 @@ input[type=color] {
   }
 }
 .slider__title-2 {
-  font-size: 50px;
-  font-weight: 400;
-  font-family: 'Raleway', sans-serif;
+  font-size: 42px;
+  font-weight: 800;
+  /* font-family: 'Raleway', sans-serif; */
+  font-family: sans-serif;
   color: var(--tp-common-black-3);
   letter-spacing: -0.03em;
   margin-bottom: 13px;
@@ -2201,6 +2202,7 @@ input[type=color] {
   border-radius: 50%;
 }
 @media (max-width: 575px) {
+
   .slider__thumb-mask::after {
     width: 290px;
     height: 290px;
@@ -2262,8 +2264,8 @@ input[type=color] {
 }
 .slider__shape-3 {
   position: absolute;
-  top: 10%;
-  right: -9%;
+  top: 76%;
+  right: 0%;
   -webkit-animation: hero-shadow 3s ease-in-out infinite alternate;
     animation: hero-shadow 3s ease-in-out infinite alternate;
     z-index: 10;
@@ -2735,6 +2737,7 @@ input[type=color] {
   line-height: 28px;
   color: var(--tp-text-5);
   margin-bottom: 30px;
+  text-align: justify;
 }
 .about__list ul li {
   font-size: 16px;
