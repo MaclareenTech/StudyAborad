@@ -7347,7 +7347,7 @@ input[type=color] {
   overflow: visible;
 }
 .testimonial__item {
-  padding: 40px 45px;
+  padding: 40px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -o-border-radius: 10px;
@@ -10324,3 +10324,60 @@ p.checkout-coupon input[type=text]:focus {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+/* Akash Edited Sections */
+
+.process__active .testimonial__avater img {
+  z-index: 999;
+}
+
+.process__active .testimonial__avater::before {
+  content: "";
+  height: 1px;
+  border: 1px dashed #ddd;
+  width: 50%;
+  top: 36%;
+  left: -32px;
+  position: absolute;
+}
+
+.process__active .testimonial__avater::after {
+  content: "";
+  height: 1px;
+  border: 1px dashed #ddd;
+  width: 50%;
+  top: 36%;
+  position: absolute;
+}
+
+.first-child-dotted::before, .last-child-dotted::after {
+  display: none;
+} 
+
+.process__active .owl-nav {
+  position: absolute;
+  top: 25%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.owl-nav .owl-prev.disabled,
+.owl-nav .owl-next.disabled {
+  visibility: hidden;
+}
+
+.owl-nav .owl-prev, .owl-nav .owl-next {
+  border: 1px solid black;
+  padding: 12px 20px 8px ;
+  border-radius: 50%;
+}
+
+.owl-nav .owl-prev {
+  margin-left: -60px;
+}
+
+.owl-nav .owl-next {
+  margin-right: -60px;
+}
+
