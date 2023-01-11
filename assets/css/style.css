@@ -10273,7 +10273,7 @@ p.checkout-coupon input[type=text]:focus {
 
 .process__active .owl-nav {
   position: absolute;
-  top: 25%;
+  top: 21%;
   width: 100%;
   display: flex;
   justify-content: space-between;
