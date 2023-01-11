@@ -2683,7 +2683,7 @@ input[type=color] {
   margin-bottom: 10px;
 }
 .features__title {
-  font-size: 19px;
+  font-size: 17px;
   font-weight: 600;
   margin-bottom: 5px;
 }
@@ -6570,63 +6570,7 @@ input[type=color] {
     margin-top: 50px;
   }
 }
-.category__item:hover .category__icon a {
-  background-color: var(--tp-common-blue-2);
-}
-.category__item:hover .category__icon a svg path {
-  stroke: var(--tp-common-white);
-}
-.category__item:hover .category__icon.pink-bg a {
-  background-color: var(--tp-common-pink);
-}
-.category__item:hover .category__icon.pink-bg a svg path {
-  stroke: var(--tp-common-white);
-}
-.category__item:hover .category__icon.green-bg a {
-  background-color: var(--tp-common-green-3);
-}
-.category__item:hover .category__icon.green-bg a svg path {
-  fill: var(--tp-common-white);
-  stroke: var(--tp-common-white);
-}
-.category__item:hover .category__icon.orange-bg a {
-  background-color: var(--tp-common-orange);
-}
-.category__item:hover .category__icon.orange-bg a svg path {
-  stroke: var(--tp-common-white);
-}
-.category__item:hover .category__icon.purple-bg a {
-  background-color: var(--tp-common-purple);
-}
-.category__item:hover .category__icon.purple-bg a svg path {
-  stroke: var(--tp-common-white);
-}
-.category__item:hover .category__icon.green-bg-2 a {
-  background-color: var(--tp-common-green-4);
-}
-.category__item:hover .category__icon.green-bg-2 a svg path {
-  stroke: var(--tp-common-white);
-}
-.category__item:hover .category__icon.yellow-bg a {
-  background-color: var(--tp-common-yellow);
-}
-.category__item:hover .category__icon.yellow-bg a svg path {
-  stroke: var(--tp-common-white);
-  fill: var(--tp-common-white);
-}
-.category__item:hover .category__icon.violet-bg a {
-  background-color: var(--tp-common-violet);
-}
-.category__item:hover .category__icon.violet-bg a svg path {
-  fill: var(--tp-common-white);
-}
-.category__item:hover .category__icon.add a {
-  background-color: var(--tp-common-green-2);
-  color: var(--tp-common-white);
-}
-.category__item:hover .category__icon.add a svg path {
-  fill: var(--tp-common-white);
-}
+
 .category__item-3 {
   border: 2px solid rgba(3, 18, 32, 0.06);
   -webkit-border-radius: 14px;
@@ -6652,32 +6596,9 @@ input[type=color] {
   -o-border-radius: 14px;
   -ms-border-radius: 14px;
   border-radius: 14px;
-  background-color: rgba(66, 112, 255, 0.1);
+  background-color: rgba(223, 226, 235, 0.1);
 }
-.category__icon.pink-bg a {
-  background-color: rgba(255, 100, 112, 0.1);
-}
-.category__icon.green-bg a {
-  background-color: rgba(39, 170, 77, 0.1);
-}
-.category__icon.orange-bg a {
-  background-color: rgba(243, 127, 67, 0.1);
-}
-.category__icon.purple-bg a {
-  background-color: rgba(227, 60, 255, 0.1);
-}
-.category__icon.green-bg-2 a {
-  background-color: rgba(32, 173, 150, 0.1);
-}
-.category__icon.yellow-bg a {
-  background-color: rgba(245, 180, 85, 0.1);
-}
-.category__icon.violet-bg a {
-  background-color: rgba(97, 81, 251, 0.1);
-}
-.category__icon.violet-bg a svg path {
-  fill: #6151FB;
-}
+
 .category__icon.add a {
   background-color: transparent;
   border: 1px solid var(--tp-common-green-2);
@@ -7372,11 +7293,6 @@ input[type=color] {
   width: 66px !important;
   height: 66px;
   display: inline-block !important;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -o-border-radius: 50%;
-  -ms-border-radius: 50%;
-  border-radius: 50%;
 }
 .testimonial__avater-info h3 {
   font-size: 16px;
@@ -7395,6 +7311,7 @@ input[type=color] {
   line-height: 26px;
   color: var(--tp-text-12);
   margin-bottom: 20px;
+  padding: 20px;
 }
 .testimonial__rating ul li {
   display: inline-block;
@@ -10336,7 +10253,7 @@ p.checkout-coupon input[type=text]:focus {
   height: 1px;
   border: 1px dashed #ddd;
   width: 50%;
-  top: 36%;
+  top: 30%;
   left: -32px;
   position: absolute;
 }
@@ -10346,7 +10263,7 @@ p.checkout-coupon input[type=text]:focus {
   height: 1px;
   border: 1px dashed #ddd;
   width: 50%;
-  top: 36%;
+  top: 30%;
   position: absolute;
 }
 
@@ -10381,3 +10298,19 @@ p.checkout-coupon input[type=text]:focus {
   margin-right: -60px;
 }
 
+.category__icon img {
+  width: 100%;
+  transition: all 0.5s ease;
+}
+
+.map_flag {
+  display: none;
+}
+
+.category__icon:hover .square_flag {
+  display: none;
+}
+
+.category__icon:hover .map_flag {
+  display: inline-block;
+}
