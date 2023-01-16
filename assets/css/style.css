@@ -7219,6 +7219,9 @@ input[type=color] {
 .testimonial__slider .owl-stage-outer {
   overflow: visible;
 }
+.owl-stage {
+  display: flex;
+}
 .testimonial__slider .owl-item {
   opacity: 0;
   visibility: hidden;
@@ -7227,6 +7230,7 @@ input[type=color] {
   -ms-transition: all 0.3s ease-out 0s;
   -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
+  flex: 1;
 }
 .testimonial__slider .owl-item.active {
   opacity: 1;
@@ -10313,4 +10317,8 @@ p.checkout-coupon input[type=text]:focus {
 
 .category__icon:hover .map_flag {
   display: inline-block;
+}
+
+.social-media-post {
+  padding: 10px;
 }
