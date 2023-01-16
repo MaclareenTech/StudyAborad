@@ -155,7 +155,7 @@
 	var sliderr = new Swiper('.active', {
 		slidesPerView: 1,
 		spaceBetween: 30,
-		loop: true,
+		loop: false,
 		pagination: {
 			el: ".testimonial-pagination",
 			clickable: true,
@@ -186,11 +186,37 @@
 	// 13. Masonary Js
 	$(".testimonial__active").owlCarousel({
 		//add owl carousel in activation class
-		loop: true,
+		loop: false,
 		margin: 30,
 		items: 4,
-		navText: ['<button class="nav-left"><i class="far fa-angle-left"></i></button>', '<button class="nav-right"><i class="far fa-angle-right"></i></button>'],
+		navText: ['<button class="nav-left slider-arrows"><i class="far fa-angle-left" style="font-size:30px"></i></button>', '<button class="nav-right slider-arrows"><i class="far fa-angle-right" style="font-size:30px"></i></button>'],
 		nav: false,
+		dots: true,
+		slideTransition: 'fadeOutLeft',
+		smartSpeed: 300,
+		responsive: {
+			0: {
+				items: 1
+			},
+			767: {
+				items: 2
+			},
+			992: {
+				items: 3
+			},
+			1200: {
+				items: 3
+			}
+		}
+	});
+
+	$(".process__active").owlCarousel({
+		//add owl carousel in activation class
+		loop: false,
+		margin: 60,
+		items: 4,
+		navText: ['<button class="nav-left slider-arrows"><i class="far fa-angle-left" style="font-size:30px"></i></button>', '<button class="nav-right slider-arrows"><i class="far fa-angle-right" style="font-size:30px"></i></button>'],
+		nav: true,
 		dots: true,
 		slideTransition: 'fadeOutLeft',
 		smartSpeed: 300,
